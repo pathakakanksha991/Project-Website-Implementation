@@ -1,0 +1,26 @@
+Folder PATH listing for volume DATA
+Volume serial number is 7C54-C780
+D:.
+|   .project
+|   manage.py
+|   Procfile
+|   requirements.txt
+|   
++---api
+|   |   admin.py
+|   |   apps.py
+|   |   models.py
+|   |   resources.py
+|   |   tests.py
+|   |   views.py
+|   |   __init__.py
+|   |   
+|   +---migrations
+|   \---__pycache__
+|           
+\---wedlock_app
+    |   settings.py
+    |   urls.py
+    |   wsgi.py
+    |   __init__.py
+            

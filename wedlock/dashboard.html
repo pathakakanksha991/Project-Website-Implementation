@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>WedLock</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
+  <link rel="stylesheet" href="plugins/icofont/icofont.min.css">
+  <link rel="stylesheet" href="plugins/fontawesome/css/all.css">
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
+  <link rel="stylesheet" href="plugins/video-popup/modal-video.min.css">
+  <link rel="stylesheet" href="plugins/swiper/swiper.min.css">
+  <link rel="stylesheet" href="plugins/date-picker/datepicker.min.css">
+  <link rel="stylesheet" href="plugins/clock-picker/clockpicker.min.css">
+  <link rel="stylesheet" href="plugins/bootstrap-touchpin/jquery.bootstrap-touchspin.min.css">
+  <link rel="stylesheet" href="plugins/devices.min.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+<!-- Preloader -->
+  <div class="preloader">
+    <img src="images/preloader.gif" alt="preloader" class="img-fluid">
+  </div>
+
+<!-- Header Start -->
+<header class="navigation ">
+	<nav class="navbar navbar-expand-lg main-nav py-lg-3 position-absolute w-100" id="main-nav">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img src="images/logo.png" alt="" class="img-fluid">
+			</a>
+
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navigation"
+				aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fa fa-bars"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navigation">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+					<li class="nav-ite	m"><a class="nav-link" href="appointment.html">Appointments</a></li>
+					<li class="nav-item"><a class="nav-link" href="testimonial.html">Testimonials</a></li>
+					<li class="nav-item"><a class="nav-link" href="booking.html">Bookings</a></li>
+					<li class="nav-item" id="dashboard_nav" style="display:none"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+					<li class="nav-item" id="admin_nav" style="display:none"><a class="nav-link" href="admin.html">Admin</a></li>
+					<li class="nav-item" id="login_nav"><a class="nav-link" href="login.html">Login</a></li>	
+					<li class="nav-item" id="logout_nav" style="display:none"><a class="nav-link" onclick="logout()">Logout</a></li>	
+				</ul>
+			</div>
+			<div class = "user_welcome" id="user_welcome" style="display:none"></div>
+		</div>
+	</nav>
+</header>
+<!-- Header Close -->
+
+<!-- Section Header Start -->
+<section class="section-header bg-1">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="text-center">
+          <h1 class="text-capitalize mb-4 font-lg text-white">Dashboard</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Section Header Close -->
+
+<!-- Section Start -->
+<section class="section cart">
+	<div class="container">
+    	<div class="row">
+			<div class="col-lg-2 form-wrap"></div>
+    	
+			<div class="col-lg-8 form-wrap">
+				<div class="text-center py-5 form-2 secondary-bg mt-2 mt-lg-0">
+					<div class="row">
+					<div class="col-md-12 col-lg-4">   
+					<div class="mascot">
+						<img src="images/bg/mascot1.png" alt="mascot" class="img-fluid mirror"/>
+					</div>
+          		</div>
+						<div class="col-md-12 col-lg-4">
+							<span class="font-extra font-md text-primary">We are excited to make your dream come true!</span>
+							  <h3 class="font-md mb-3">Your Appointment</h3>
+
+							  <ul class="list-unstyled">
+								<li class="mb-2">
+								  <h4 class="mb-0">Date</h4>
+								  <span id="appointment_date">02/22/2020</span>
+								</li>
+								<li class="">
+								  <h4 class="mb-0 ">Time</h4>
+								  <span id="appointment_time">9am-11pm</span>
+								</li>
+							  </ul>
+
+						  <div class="mt-2">
+							<p class="font-extra text-capitalize font-md text-primary">Call us at -</p> <h3 class="mb-0">02 34597879</h3>     
+						  </div>
+						  
+				</div>
+          		<div class="col-md-12 col-lg-4">   
+					<div class="mascot">
+						<img src="images/bg/mascot1.png" alt="mascot" class="img-fluid"/>
+					</div>
+          		</div>
+          </div>
+        </div>
+        
+        </div>
+        
+        <div class="col-lg-2 form-wrap"></div>
+        
+        </div>
+    </div>
+
+
+<section class="section cart">
+  <div class="container">
+    <div class="row justify-content-end">
+      <div class="col-lg-12">
+        <div class="table-responsive">
+          <table class="table text-center table-cart"> 	  
+            <thead>
+              <tr>
+                <th scope="col" colspan="2">package/service name</th>
+                <th scope="col">price</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody id="table_bookings">
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-6 mt-4">
+        <div class="px-xl-5 py-4 card border-0 ">
+          <div class="">
+            <h4 class="text-dark font-size-20">Order Summary</h4>
+            <hr>
+            <p>The total for packages and services is as below:</p>
+          </div>
+
+          <div class="media align-items-center border-bottom font-weight-medium py-3">
+            <div class="media-body">
+              <span class="text-black">Subtotal</span>
+            </div>
+            <span class="text-dark" id="subtotal">Rs.0</span>
+          </div>
+
+          <div class="media align-items-center border-bottom font-weight-medium py-3">
+            <div class="media-body">
+              <span class="text-black">Estimated Tax</span>
+            </div>
+            <span class="text-dark" id="tax">Rs.0</span>
+          </div>
+
+          <div class="media justify-content-between align-items-center py-3">
+            <span class="text-dark ">Grand Total</span>
+            <span class="text-dark font-weight-bold" id="total">Rs.0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Section Close -->
+
+<!-- Footer Start -->
+<footer class="section footer">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-4 col-md-3 mb-5 mb-lg-0">
+				<div class="widget">
+					<h4 class="mb-3">About</h4>
+					<p>We take our commitment to couples very seriously and never forget how much people are counting on us. Our aim is to make the planning of your wedding as pleasurable and stress-free as possible!</p>
+
+				</div>
+			</div>
+
+			<div class="col-lg-4 ml-auto col-md-5 mb-5 mb-lg-0">
+				<div class="widget">
+					<h4 class="mb-3">Contact Info</h4>
+
+					<ul class="list-unstyled mb-0 footer-contact">
+						<li><i class="ti-mobile"></i>+1 987 654 3210</li>
+						<li><i class="ti-email"></i>mail@wedlock.com</li>
+						<li><i class="ti-map"></i>1234 Crawford Street, Mumbai - 400 003</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 mb-5 mb-lg-0">
+				<div class="widget">
+					<h4 class="mb-3">Opening Hours</h4>
+
+					<div class="info mb-4">
+						<p class="mb-0">Monday - Thursday</p>
+						<h5>10:00 AM - 8:00 PM</h5>
+					</div>
+					<div class="info">
+						<p class="mb-0">Friday - Sunday</p>
+						<h5>9:00 AM - 11:00 PM</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row justify-content-center mt-5">
+			<div class="col-lg-6 text-center">
+				<h4 class="text-white-50 mb-3">Get latest offers at your inbox</h4>
+				<form action="#" class="footer-newsletter">
+					<div class="form-group">
+						<button class="button"><span class="ti-email"></span></button>
+						<input type="email" class="form-control" placeholder="Enter Email">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<section class="footer-btm py-3">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="d-md-flex justify-content-between align-items-center py-3 text-center text-md-left">
+					<p class="mb-0 ">Copyright &copy; 2020 a project by <a href="#"
+							class="text-white">Team 23</a></p>
+
+					<div class="footer-menu mt-3 mt-lg-0">
+						<ul class="list-inline mb-0">
+							<li class="list-inline-item pl-2"><a href="index.html">Home</a></li>
+							<li class="list-inline-item pl-2"><a href="about.html">About Us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Footer Close -->
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/aos/aos.js"></script>
+<script src="plugins/shuffle/shuffle.min.js"></script>
+<script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="plugins/date-picker/datepicker.min.js"></script>
+<script src="plugins/clock-picker/clockpicker.min.js"></script>
+<script src="plugins/video-popup/jquery-modal-video.min.js"></script>
+<script src="plugins/swiper/swiper.min.js"></script>
+<script src="plugins/instafeed/instafeed.min.js"></script>
+<script src="plugins/bootstrap-touchpin/jquery.bootstrap-touchspin.min.js"></script>
+
+ <!-- Google Map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script> 
+<script src="plugins/google-map/gmap.js"></script>
+<!-- Main Script -->
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/script.js"></script>
+
+</html>

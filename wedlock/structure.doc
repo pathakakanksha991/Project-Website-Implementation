@@ -1,0 +1,45 @@
+Folder PATH listing for volume DATA
+Volume serial number is 7C54-C780
+D:.
+|   .project
+|   404.html
+|   about.html
+|   admin.html
+|   appointment.html
+|   booking.html
+|   composer.json
+|   dashboard.html
+|   index.html
+|   login.html
+|   signup.html
+|   testimonial.html
+|   
++---css
+|   |   style.css
+|           
++---images
+|           
++---js
+|       contact.js
+|       main.js
+|       script.js
+|       
+\---plugins
+    |   devices.min.css
+    |   
+    +---aos
+    +---bootstrap
+    +---bootstrap-touchpin
+    +---clock-picker
+    +---date-picker
+    +---fontawesome
+    +---google-map
+    +---icofont
+    +---instafeed
+    +---jQuery
+    +---magnific-popup
+    +---shuffle
+    +---swiper
+    +---themify
+   
+            

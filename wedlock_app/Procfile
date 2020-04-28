@@ -1,0 +1,1 @@
+web: gunicorn wedlock_app.wsgi

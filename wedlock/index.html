@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>WedLock</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
+  <link rel="stylesheet" href="plugins/icofont/icofont.min.css">
+  <link rel="stylesheet" href="plugins/fontawesome/css/all.css">
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
+  <link rel="stylesheet" href="plugins/video-popup/modal-video.min.css">
+  <link rel="stylesheet" href="plugins/swiper/swiper.min.css">
+  <link rel="stylesheet" href="plugins/date-picker/datepicker.min.css">
+  <link rel="stylesheet" href="plugins/clock-picker/clockpicker.min.css">
+  <link rel="stylesheet" href="plugins/bootstrap-touchpin/jquery.bootstrap-touchspin.min.css">
+  <link rel="stylesheet" href="plugins/devices.min.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+<!-- Preloader -->
+  <div class="preloader">
+    <img src="images/preloader.gif" alt="preloader" class="img-fluid">
+  </div>
+
+<!-- Header Start -->
+<div class="alert alert-danger alert-server text-center" role="alert">
+  <button type="button" class="close" data-dismiss="alert">x</button>
+  <strong>COVID-19 Update : </strong>Although we are open, our offices are closed to the public. Please contact us for support!
+</div>
+
+<header class="navigation ">
+	<nav class="navbar navbar-expand-lg main-nav py-lg-3 position-absolute w-100" id="main-nav">
+		<div class="container">	
+			<a class="navbar-brand" href="index.html">
+				<img src="images/logo.png" alt="" class="img-fluid">
+			</a>
+
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navigation"
+				aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fa fa-bars"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navigation">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="appointment.html">Appointments</a></li>
+					<li class="nav-item"><a class="nav-link" href="testimonial.html">Testimonials</a></li>
+					<li class="nav-item"><a class="nav-link" href="booking.html">Bookings</a></li>
+					<li class="nav-item" id="dashboard_nav" style="display:none"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+					<li class="nav-item" id="admin_nav" style="display:none"><a class="nav-link" href="admin.html">Admin</a></li>
+					<li class="nav-item" id="login_nav"><a class="nav-link" href="login.html">Login</a></li>	
+					<li class="nav-item" id="logout_nav" style="display:none"><a class="nav-link" onclick="logout()">Logout</a></li>	
+				
+				</ul>
+				<div class = "user_welcome" id="user_welcome" style="display:none"></div>
+			</div>
+			
+		</div>
+	</nav>
+</header>
+<!-- Header Close -->
+
+<!--  Banner start -->
+<section class="slider-hero hero-slider  hero-style-1  ">
+  <div class="swiper-container swiper-container-horizontal">
+    <div class="swiper-wrapper">
+      <!-- start slide-item -->
+      <div class="swiper-slide slide-item">
+        <div class="slide-inner slide-bg-image main-sider-inner" data-background="images/banner/1.jpg">
+          <!-- <div class="overlay"></div> -->
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7">
+                <span data-swiper-parallax="300" class="text-primary font-extra font-md">Welcome to WedLock!</span>
+                <h1 class="mt-3 mb-5 text-lg text-white diff" data-swiper-parallax="400">We promise to turn your dreams into reality because you deserve it</h1>      
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+      <!-- end slide-item -->
+      
+      <!-- start slide-item -->
+      <div class="swiper-slide slide-item">
+        <div class="slide-inner slide-bg-image main-sider-inner" data-background="images/banner/2.jpg">
+          <!-- <div class="overlay"></div> -->
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7">
+                <span data-swiper-parallax="300" class="text-primary font-extra font-md diff">Welcome to WedLock!</span>
+                <h1 class="mt-3 mb-5 text-lg text-white diff" data-swiper-parallax="400">"True love stories never have endings." Join us at WedLock to plan a beautiful new chapter of your love story !!</h1>
+                
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+      <!-- end slide-item -->
+      
+      <!-- start slide-item -->
+      <div class="swiper-slide slide-item">
+        <div class="slide-inner slide-bg-image main-sider-inner" data-background="images/banner/3.jpg">
+          <!-- <div class="overlay"></div> -->
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7">
+                <span data-swiper-parallax="300" class="text-primary font-extra font-md diff">Welcome to WedLock!</span>
+                <h1 class="mt-3 mb-5 text-lg text-white diff" data-swiper-parallax="400">"The best thing to hold onto in life is each other."  We at WedLock promise to plan the best on the best day of your life !!</h1>
+                
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+      <!-- end slide-item -->
+	  
+	  
+    </div>
+    <!-- end swiper-wrapper -->
+    <!-- swipper controls -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+<!--  Banner End -->
+
+<!--  Intro start -->
+<section class="intro">
+	<div class="container">
+		<div class="intro-wrap bg-white w-100">
+			<div class="row no-gutters">
+				<div class="col-lg-4 col-md-4">
+					<div class="intro-item" data-aos="fade-up">
+						<i class="icofont-ui-user-group"></i>
+						<h3 class="mt-3">Free Consultation</h3>
+						<p>Got Questions about planning your wedding? We canâ€™t wait to hear about your wedding plans. Get in touch with us. We will give you our first free consultation to figure out the details.</p>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-4">
+					<div class="intro-item bg-gray " data-aos="fade-up" data-aos-delay="300">
+						<i class="icofont-gears"></i>
+						<h3 class="mt-3">Wedding Services</h3>
+						<p>We are more than a wedding planning firm! We are a one-stop solution for planning your wedding, providing a venue, catering, wedding packages, and free consultation. </p>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-4">
+					<div class="intro-item" data-aos="fade-up" data-aos-delay="600">
+						<i class="icofont-package"></i>
+						<h3 class="mt-3">Wedding Packages</h3>
+						<p>We take pride in the fact that our events reflect the best version of our clientâ€™s vision, and each one is as unique as they are. Let us find out the type of wedding you are looking for!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--  Intro End -->
+
+<!-- About start -->
+<section class="section about">
+	<div class="container">
+		<div class="row  justify-content-center mb-5">
+			<div class="col-lg-8 text-center">
+				<span class="text-primary font-extra font-md">About WedLock</span>
+				<h2 class="mt-3 mb-4">We are one stop shop for </h2>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-4 col-md-4 mb-5 mb-lg-0" data-aos="fade-up">
+				<img src="images/about/img-1.jpg" alt="" class="img-fluid">
+				<div class="mt-3">
+					<h3>Venue</h3>
+					<p>Planning for a destination wedding or in the backyard of your childhood summer home !! Letâ€™s explore your dream location and weâ€™ll help you with finding the most talented vendors to fit your personality, budget and aesthetic.</p>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+				<img src="images/about/img-2.jpg" alt="" class="img-fluid">
+				<div class="mt-3">
+					<h3>Catering</h3>
+					<p>"Love love and cherish life. Also, just eat the cake.â€� 
+An Indian wedding is half the story without food! Let us help you in exploring the ideal caterers to complete the other half of your wedding story!
+</p>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="600">
+				<img src="images/about/img-3.jpg" alt="" class="img-fluid">
+				<div class="mt-3">
+					<h3>Decor</h3>
+					<p>We aim at giving you authentic and memorable celebrations paired with unparalleled attention to detail, bespoke design, and flawless execution. We believe in creating unique moments that inspire. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- About  End -->
+
+<!-- CTA start -->
+<section class="section cta">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-8 text-center">
+				<span class="font-extra text-md-2 text-white-70">We make dream weddings come true</span>
+				<h2 class="mt-3 text-white mb-4">Come & Experience Our Best of World Class Services</h2>
+				<a href="#" class="btn btn-white">book now</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- CTA  End -->
+
+<!-- Gallery start -->
+<section class="section menu">
+	<div class="container">
+		<div class="row  justify-content-center mb-5">
+			<div class="col-lg-8 text-center">
+				<span class="text-primary font-extra font-md">Gallery</span>
+				<h2 class="mt-3 mb-4">We provide services for all the wedding ceremonies. </h2>
+			</div>
+		</div>
+
+		<div class="col-12 text-center mb-5">
+			<div class="btn-group btn-group-toggle" data-toggle="buttons">
+				<label class="btn active">
+					<input type="radio" name="shuffle-filter" value="all" checked="checked"/>All
+				</label>
+				<label class="btn">
+					<input type="radio" name="shuffle-filter" value="pre-wedding"/>Pre-wedding
+				</label>
+				<label class="btn">
+					<input type="radio" name="shuffle-filter" value="engagement"/>Engagement
+				</label>
+				<label class="btn">
+					<input type="radio" name="shuffle-filter" value="haldi"/>Haldi
+				</label>
+				<label class="btn">
+					<input type="radio" name="shuffle-filter" value="wedding"/>Wedding
+				</label>
+			</div>
+		</div>
+
+		<div class="row shuffle-wrapper food-gallery">
+			<div class="col-lg-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;engagement&quot;]">
+				<div class="menu-item position-relative ">
+					<div class="d-flex align-items-center">
+						<img src="images/gallery/1.jpg" alt="" class="img-fluid mb-3 mb-lg-0">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;haldi&quot;]">
+				<div class="menu-item position-relative ">
+					<div class="d-flex align-items-center">
+						<img src="images/gallery/2.jpg" alt="" class="img-fluid mb-3 mb-lg-0">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;engagement&quot;]">
+				<div class="menu-item position-relative ">
+					<div class="d-flex align-items-center">
+						<img src="images/gallery/3.jpg" alt="" class="img-fluid mb-3 mb-lg-0">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;design&quot;,&quot;haldi&quot;]">
+				<div class="menu-item position-relative ">
+					<div class="d-flex  align-items-center">
+						<img src="images/gallery/4.jpg" alt="" class="img-fluid mb-3 mb-lg-0">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;pre-wedding&quot;]">
+				<div class="menu-item position-relative ">
+					<div class="d-flex align-items-center">
+						<img src="images/gallery/5.jpg" alt="" class="img-fluid mb-3 mb-lg-0">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;wedding&quot;]">
+				<div class="menu-item position-relative ">
+					<div class="d-flex align-items-center">
+						<img src="images/gallery/6.jpg" alt="" class="img-fluid mb-3 mb-lg-0">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;pre-wedding&quot;]">
+				<div class="menu-item position-relative ">
+					<div class="d-flex align-items-center">
+						<img src="images/gallery/7.jpg" alt="" class="img-fluid mb-3 mb-lg-0">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-6 mb-4 shuffle-item"
+				data-groups="[&quot;design&quot;,&quot;illustration&quot;,&quot;wedding&quot;]">
+				<div class="menu-item position-relative ">
+					<div class="d-flex align-items-center">
+						<img src="images/gallery/8.jpg" alt="" class="img-fluid mb-3 mb-lg-0">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+<!-- Gallery  End -->
+
+<!-- Slider main container -->
+<section class="instgram position-relative">
+  <div class="container-fluid p-0">
+    <div class="row no-gutters">
+      <h3 class="insta-title">@Instagram</h3>
+
+      <div class="swiper-container" id="gallery-slider">
+        <!-- for instagram post remove comments from bottom line and replace your user id and access token -->
+        <!-- <div class="swiper-wrapper" id="instafeed" data-userId="4044026246" data-accessToken="4044026246.1677ed0.8896752506ed4402a0519d23b8f50a17"></div> -->
+
+        <!-- this is static images. after setup instagram, remove this bottom code to the end -->
+        <div class="swiper-wrapper" id="instafeed">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <a class="popup-gallery" href="images/gallery/gallery-8.jpg">
+              <img src="images/gallery/gallery-8.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="popup-gallery" href="images/gallery/gallery-9.jpg">
+              <img src="images/gallery/gallery-9.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="popup-gallery" href="images/gallery/gallery-6.jpg">
+              <img src="images/gallery/gallery-6.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="popup-gallery" href="images/gallery/gallery-7.jpg">
+              <img src="images/gallery/gallery-7.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="popup-gallery" href="images/gallery/gallery-1.jpg">
+              <img src="images/gallery/gallery-1.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="swiper-slide ">
+            <a class="popup-gallery" href="images/gallery/gallery-2.jpg">
+              <img src="images/gallery/gallery-2.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="popup-gallery" href="images/gallery/gallery-3.jpg">
+              <img src="images/gallery/gallery-3.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="popup-gallery" href="images/gallery/gallery-4.jpg">
+              <img src="images/gallery/gallery-4.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="popup-gallery" href="images/gallery/gallery-5.jpg">
+              <img src="images/gallery/gallery-5.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <!-- end -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Footer start -->
+<footer class="section footer">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-4 col-md-3 mb-5 mb-lg-0">
+				<div class="widget">
+					<h4 class="mb-3">About</h4>
+					<p>We take our commitment to couples very seriously and never forget how much people are counting on us. Our aim is to make the planning of your wedding as pleasurable and stress-free as possible!</p>
+
+					
+				</div>
+			</div>
+
+			<div class="col-lg-4 ml-auto col-md-5 mb-5 mb-lg-0">
+				<div class="widget">
+					<h4 class="mb-3">Contact Info</h4>
+
+					<ul class="list-unstyled mb-0 footer-contact">
+						<li><i class="ti-mobile"></i>+1 987 654 3210</li>
+						<li><i class="ti-email"></i>mail@wedlock.com</li>
+						<li><i class="ti-map"></i>1234 Crawford Street, Mumbai - 400 003</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 mb-5 mb-lg-0">
+				<div class="widget">
+					<h4 class="mb-3">Opening Hours</h4>
+
+					<div class="info mb-4">
+						<p class="mb-0">Monday - Thursday</p>
+						<h5>10:00 AM - 8:00 PM</h5>
+					</div>
+					<div class="info">
+						<p class="mb-0">Friday - Sunday</p>
+						<h5>9:00 AM - 11:00 PM</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row justify-content-center mt-5">
+			<div class="col-lg-6 text-center">
+				<h4 class="text-white-50 mb-3">Get latest offers at your inbox</h4>
+				<form action="#" class="footer-newsletter">
+					<div class="form-group">
+						<button class="button"><span class="ti-email"></span></button>
+						<input type="email" class="form-control" placeholder="Enter Email">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<section class="footer-btm py-3">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="d-md-flex justify-content-between align-items-center py-3 text-center text-md-left">
+					<p class="mb-0 ">Copyright &copy; 2020 a project by <a href="#"
+							class="text-white">Team 23</a></p>
+
+					<div class="footer-menu mt-3 mt-lg-0">
+						<ul class="list-inline mb-0">
+							<li class="list-inline-item pl-2"><a href="index.html">Home</a></li>
+							<li class="list-inline-item pl-2"><a href="about.html">About Us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Footer  End -->
+
+
+<!--Modal: modalDiscount-->
+    <div class="modal fade right" id="modalDiscount" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+      aria-hidden="true" data-backdrop="true">
+      <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-danger" role="document">
+        <!--Content-->
+        <div class="modal-content">
+          <!--Header-->
+          <div class="modal-header bg-danger">
+            <p class="text-white">
+              <strong>Discount offer: 10% off</strong>
+            </p>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" class="white-text">&times;</span>
+            </button>
+          </div>
+
+          <!--Body-->
+          <div class="modal-body">
+
+            <div class="row">
+              <div class="col-3">
+                  <!--<i class="fas fa-gift fa-4x"></i>-->
+				  <img src="images/bg/mascot3.png" alt="mascot" class="img-responsive overflow-img"/>
+              </div>
+
+              <div class="col-9">
+                <p>Sharing is caring. Therefore, from time to time we like to give our visitors small gifts. Today is
+                  one of those days.</p>
+                <p>
+                  <strong>Copy the following code and use it at the checkout. It's valid for
+                    <u>one day</u>.</strong>
+                </p>
+                <h2>
+                  <span class="badge">v52gs1</span>
+                </h2>
+
+              </div>
+            </div>
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer flex-center">
+            <a href="https://mdbootstrap.com/products/jquery-ui-kit/" class="btn btn-danger">Get it
+              now
+              <i class="far fa-gem ml-1 white-text"></i>
+            </a>
+            <a type="button" class="btn btn-outline-danger waves-effect" data-dismiss="modal">No, thanks</a>
+          </div>
+        </div>
+        <!--/.Content-->
+      </div>
+    </div>
+ <!--Modal: modalDiscount-->
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/aos/aos.js"></script>
+<script src="plugins/shuffle/shuffle.min.js"></script>
+<script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="plugins/date-picker/datepicker.min.js"></script>
+<script src="plugins/clock-picker/clockpicker.min.js"></script>
+<script src="plugins/video-popup/jquery-modal-video.min.js"></script>
+<script src="plugins/swiper/swiper.min.js"></script>
+<script src="plugins/instafeed/instafeed.min.js"></script>
+<script src="plugins/bootstrap-touchpin/jquery.bootstrap-touchspin.min.js"></script>
+
+ <!-- Google Map 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script> 
+<script src="plugins/google-map/gmap.js"></script>-->
+<!-- Main Script -->
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/script.js"></script>
+
+</html>
